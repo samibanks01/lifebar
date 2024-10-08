@@ -47,8 +47,8 @@ function checkPasswordStrength(password) {
   }
 
   // Update strength bar and text based on score
-  const width = Math.min(strength.score + password.length - 8, 10);
-  //const width = (strength.score / 4) * 100; // 4 = maximum score
+  //const width = Math.min(strength.score + password.length - 8, 10);
+  const width = (strength.score / 4) * 100; // 4 = maximum score
   strengthBar.style.width = `${width}%`;
 
   
